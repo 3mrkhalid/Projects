@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #120350;
+  width: 100%;
+  position: fixed;
+
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+
+  border-radius: 0 0 12px 12px;
+}
+
+.logo {
+  text-decoration: none;
+  color: rgb(228, 229, 230);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+
+  padding-left: 30px;
+  transition: 1.5s ease;
+}
+
+.navigation a:hover {
+  color: #818181;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background: url(images/OIP.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-attachment: fixed;
+}
+
+.main h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgb(202, 38, 38);
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: rgb(49, 5, 96);
+  font-size: 2em;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.main-btn {
+  color: white;
+  background-color: rgb(32, 55, 209);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+
+  border-radius: 15px;
+  margin-bottom: 40px;
+
+  transition: 0.7s ease;
+}
+
+.main-btn:hover {
+  background-color: #2e4aa5;
+  transform: scale(1.1);
+}
+
+.Social-icons a {
+  color: rgb(30, 11, 65);
+  font-size: 1.7em;
+  padding-right: 30px;
+  transition: 1s ease;
+}
+
+.Social-icons a:hover {
+  color: rgb(54, 42, 183);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  color: rgb(9, 9, 87);
+  font-size: 2.2em;
+  font-weight: 800;
+
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #120350;
+  font-size: 7em;
+  text-align: center;
+}
+.info {
+  text-align: center;
+}
+.info h3 {
+  color: #120350;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+.Projects {
+  background-color: #08153d;
+}
+.Projects .content {
+  margin-top: 30px;
+}
+
+.Project-card {
+  background-color: #fff;
+  border: 1px solid white;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.Project-card:hover {
+  transform: scale(1.1);
+}
+
+.Project-image img {
+  width: 100%;
+}
+
+.Project-card:hover .Project-image {
+  opacity: 0.9;
+}
+
+.Project-info {
+  padding: 1em;
+}
+
+.Project-category {
+  font-size: 0.8em;
+}
+
+.Project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.more-detalis {
+  text-decoration: none;
+  color: #522bed;
+  transition: 1s ease;
+}
+
+.more-detalis:hover {
+  color: #120350;
+}
+
+.Contact .icon {
+  font-size: 4.5em;
+}
+
+.Contact .info h3 {
+  color: black;
+}
+
+.content .info p {
+  font-size: 1.5em;
+}
+
+.footer {
+  background-color: #040e2e;
+  color: white;
+  padding: 2em;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.Socialicons a {
+  color: rgb(254, 254, 255);
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+  transition: 1s ease;
+}
+
+.Socialicons a:hover {
+  color: rgb(54, 42, 183);
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: #21b9ff;
+}
+
+.cards
+{
+  border: 1px solid black;
+}
