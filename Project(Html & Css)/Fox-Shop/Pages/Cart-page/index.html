@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="flex_border">
+      <a href="../../index.html">
+        <div class="logo">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span style="font-weight: bold">FOX</span>
+          <p style="letter-spacing: 0.5px">Shopping</p>
+        </div>
+      </a>
+
+      <div class="links">
+        <a href="" class="Cart" style="position: relative">
+          <i class="fa-solid fa-cart-shopping"></i>
+          $0.00
+          <span class="products-number">2</span>
+        </a>
+        <a href="../Login-page/index.html" class="Sign_in">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          Sing in
+        </a>
+        <a href="../Sign up-page/index.html" class="Register">
+          <i class="fa-solid fa-user-plus"></i>
+          Register
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="Cart">
+        <article class="Product" style="display: flex; align-items: center">
+          <button class="trash">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+          <p class="price">$133</p>
+          <div class="flex" style="margin-right: 1rem; display: flex">
+            <button class="decrease">-</button>
+            <div class="quantity">3</div>
+            <button class="increase">+</button>
+          </div>
+
+          <p class="title">Boxer</p>
+          <img
+            src="../../images/1.png"
+            alt=""
+            style="border-radius: 0.22rem"
+            width="70"
+            height="70"
+          />
+        </article>
+      </section>
+
+      <section class="Cart">
+        <article class="Product" style="display: flex; align-items: center">
+          <button class="trash">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+          <p class="price">$133</p>
+          <div class="flex" style="margin-right: 1rem; display: flex">
+            <button class="decrease">-</button>
+            <div class="quantity">3</div>
+            <button class="increase">+</button>
+          </div>
+          <p class="title">Cap</p>
+          <img
+            src="../../images/5.webp"
+            alt=""
+            style="border-radius: 0.22rem"
+            width="70"
+            height="70"
+          />
+        </article>
+      </section>
+
+      <section class="Cart">
+        <article class="Product" style="display: flex; align-items: center">
+          <button class="trash">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+          <p class="price">$133</p>
+          <div class="flex" style="margin-right: 1rem; display: flex">
+            <button class="decrease">-</button>
+            <div class="quantity">3</div>
+            <button class="increase">+</button>
+          </div>
+          <p class="title">Glasses</p>
+          <img
+            src="../../images/7.webp"
+            alt=""
+            style="border-radius: 0.22rem"
+            width="70"
+            height="70"
+          />
+        </article>
+      </section>
+
+      <button class="clear">
+        <i class="fa-solid fa-trash-can" style="margin-right: 0.2rem"></i>
+        Clear Cart
+      </button>
+
+      <section class="summary">
+        <h1>Cart Summary</h1>
+        <div style="display: flex; justify-content: space-between; padding-inline: 0.5rem; margin-block: 0.6rem;">
+          <p class="Subtotal">Subtotal</p>
+          <p>$1999</p>
+        </div>
+        <button disabled class="checkout">CHECKOUT</button>
+        <a href="../Login-page/index.html">Please Sign in to continue</a>
+      </section>
+    </main>
+
+    <footer>
+      Designed and developed by
+      <span> Amr Khalid</span>
+      &copy; 2025.
+    </footer>
+  </body>
+</html>

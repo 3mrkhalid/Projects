@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+html {
+  font-family: system-ui, -apple-system, "Poppins", sans-serif;
+  button:active{
+  scale: 0.9;
+  }
+  
+} 
+
+/* For head */
+header.flex_border {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10%;
+  padding-top: 1.2rem;
+
+  & .Sign_in {
+    margin-inline: 1rem;
+  }
+
+  & .Sign_in,
+  & .Register {
+    border: 1px solid black;
+    padding: 0.54rem 1rem;
+    border-radius: 55px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: 2s ease;
+    color: black;
+  }
+
+  & .Sign_in:hover,
+  & .Register:hover {
+    background-color: rgb(14, 14, 81);
+    color: rgb(168, 216, 236);
+  }
+
+
+
+  & .links .fa-solid {
+    margin-right: 0.3rem;
+  }
+
+  & .Cart {
+    background-color: rgba(14, 14, 110, 0.888);
+    color: rgb(154, 201, 235);
+    border: 1px solid black;
+    border-radius: 55px;
+    font-size: 0.9rem;
+    padding: 0.44rem 1.1rem 0.44rem 0.6rem;
+    transition: 1s ease;
+  }
+
+  & .Cart:hover{
+    background-color: rgb(9, 9, 185);
+  }
+
+
+  & .products-number {
+    position: absolute;
+    background-color: rgb(255, 100, 100);
+    height: 22px;
+    width: 22px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: 0;
+    top: -5px;
+  }
+
+  /*==================================
+            left Section (logo)
+  ====================================*/
+
+  & .logo {
+    color: rgb(51, 51, 51);
+  }
+  & .fa-bag-shopping {
+    font-size: 2rem;
+  }
+}
+
+@media (width < 600px) {
+  .logo {
+    display: none;
+  }
+  header.flex_border {
+    justify-content: center;
+    padding-inline: 0;
+
+    & .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}
+
+/* head & body */
+
+/*======================
+    Background Image
+=======================*/
+
+div.top-img {
+  background-image: url(images/bac.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media (width < 1000px) {
+  div.top-img {
+    background-position: left;
+  }
+}
+
+/* For pages */
+
+/* ===================
+    Text on image
+======================*/
+section.content {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10%;
+
+  & .lifestyle {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+  }
+  & .men {
+    margin-top: 0.7rem;
+    font-weight: bold;
+  }
+  & .sale {
+    margin-block: 0.5rem;
+    font-weight: bold;
+  }
+  & .sale span {
+    color: crimson;
+    margin-left: 0.8rem;
+  }
+  & .free-shipping {
+    font-size: 1.5rem;
+  }
+  & button {
+    background-color: black;
+    color: white;
+    padding: 0.6rem 1.6rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 0.9rem;
+    cursor: pointer;
+  }
+
+}
+
+/*=========================
+
+  Main Contents (Products)
+  
+ ==========================*/
+
+main{
+  width: 80%;
+  margin-inline:auto;
+}
+@media (width < 600px)
+{
+  main{
+    width: 100%;
+  }
+}
+
+@media (width < 600px)
+{
+  main h1.recommend{
+  margin: 2.3rem 0 2rem 0;
+  font-size: 1.4rem;
+  }
+}
+
+main h1.recommended{
+  margin: 2.3rem 0 2rem 2%;
+}
+main section.products {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 1.4rem;
+
+  & article.card {
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition: 0.5s ease;
+  }
+
+  & article.card:hover {
+    scale: 1.02;
+  }
+
+  & img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  & .card .content .title {
+    padding-top: 0.7rem;
+    padding-inline: 0.4rem;
+    text-transform: capitalize;
+  }
+
+  & .card .content .description {
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+    padding-inline: 0.4rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    }
+
+  & .card .content .price {
+    margin-left: 0.88rem;
+    color: rgb(199, 0, 40);
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+
+  & .add-to-cart{
+    background-color: rgb(53, 53, 244);
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    gap: 0.33rem;
+    cursor: pointer;
+    transition: 1s ease;
+  }
+
+  & .add-to-cart:hover{
+      background-color: blue;
+      scale:0.9;
+  }
+
+  & .card .flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:0.7rem ;
+    padding-right: 0.7rem;
+  }
+}
+
+/* For Footer */
+
+footer{
+  text-align: center;
+  background-color: rgb(26, 26, 27);
+  color: #fff;
+  margin-top: 3rem;
+  padding-block: 1rem;
+  border-radius: 8px 8px 0 0;
+  font-size: 17px;
+
+  & span{
+    color: #ff7790;
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+html {
+  font-family: system-ui, -apple-system, "Poppins", sans-serif;
+  button:active {
+    scale: 0.9;
+  }
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+}
+
+main {
+  width: 80%;
+  margin-inline: auto;
+}
+@media (width < 600px) {
+  main {
+    width: 100%;
+  }
+}
+
+header.flex_border {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10%;
+  padding-block: 0.6rem;
+
+  background-color: rgb(26, 26, 27);
+
+  & .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .Sign_in {
+    margin-inline: 1rem;
+  }
+
+  & .Sign_in,
+  & .Register {
+    padding: 0.54rem 1rem;
+    border-radius: 55px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: 1.5s ease;
+    color: #fff;
+    border: 0.3px solid #696969;
+  }
+
+  & .Sign_in:hover,
+  & .Register:hover {
+    background-color: rgba(35, 12, 188, 0.753);
+    padding: 0.5rem 1.1rem;
+    border: 1px solid #696969;
+    border: 0.3px solid #fff;
+  }
+
+  & .links .fa-solid {
+    margin-right: 0.3rem;
+  }
+
+  & .Cart {
+    color: rgb(154, 201, 235);
+    border: 1px solid black;
+    border-radius: 55px;
+    font-size: 0.9rem;
+    padding: 0.44rem 1.1rem 0.44rem 0.6rem;
+    border: 0.3px solid #696969;
+    transition: 1s ease;
+  }
+
+  & .Cart:hover {
+    background-color: rgba(5, 5, 103, 0.838);
+  }
+
+  & .products-number {
+    position: absolute;
+    background-color: rgb(255, 100, 100);
+    height: 22px;
+    width: 22px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: 0;
+    top: -5px;
+  }
+  /*==================================
+          left Section (logo)
+    ===================================*/
+
+  & .logo {
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+    transition: 1s;
+  }
+  & .fa-bag-shopping {
+    font-size: 1.5rem;
+  }
+
+  & .logo:hover {
+    scale: 0.9;
+  }
+}
+
+@media (width < 600px) {
+  .logo {
+    display: none;
+  }
+  header.flex_border {
+    justify-content: center;
+    padding-inline: 0;
+
+    & .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}
+
+main {
+  max-width: 800px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 0.4rem;
+
+  & img {
+    width: 40%;
+    border-radius: 0.4rem;
+  }
+
+  & .price {
+    font-size: 1.22rem;
+    font-weight: bold;
+    color: #c70d2f;
+  }
+
+  & .Product-details {
+    margin-inline: 1.1rem;
+  }
+
+  & .description {
+    margin-block: 1.2rem;
+    line-height: 1.44rem;
+    text-align: left;
+  }
+
+  & .add-to-cart {
+    background-color: rgb(53, 53, 244);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    padding: 6px 8px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (width < 800px) {
+  main{
+    flex-wrap: wrap;
+  
+
+    & img{
+        margin-inline: auto;
+        width: 260px;
+    }
+
+    .Product-details{
+      margin-top: 2.5rem;
+      margin-bottom: 1.3rem;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(26, 26, 27);
+  color: #fff;
+  margin-top: 3rem;
+  padding-block: 1rem;
+  border-radius: 8px 8px 0 0;
+  font-size: 17px;
+
+  & span {
+    color: #ff7790;
+    text-transform: capitalize;
+  }
+}
